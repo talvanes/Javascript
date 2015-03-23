@@ -1,0 +1,32 @@
+/* configurações gerais */
+html, body {
+	margin: 0; padding: 0;
+	width: 100%; height: 100%;
+}
+* {
+	font-size: medium;
+	text-align: justify;
+	font-family: "MS Sans Serif", Geneva, sans-serif;
+}
+
+section {
+	display: block;
+	margin: 1em;
+}
+#txt {
+	border: 2px solid black;
+	padding: 1em 0.7em 0.75em 1.25em;
+}
+#resultado {
+	font: lighter 0.8em "Courier New",Courier,monospace;
+}
+
+form {
+	margin: 1.2em 1em 0.8em;
+}
+form.* {
+	display: inline-block;
+}
+form[name=localizar], form[name=substituir] {
+	display: block;
+}

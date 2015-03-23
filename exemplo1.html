@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript - Output</title>
+</head>
+
+<body>
+
+<!-- Formatação básica: um título e um parágrafo -->
+<h1>Primeiro t&iacute;tulo</h1>
+<p id="demo">Primeiro par&aacute;grafo</p>
+<br>
+<!-- Javascripts - recursos para dando saída no documento -->
+<table>
+<tr>
+	<td><button type="button" onclick="mudaTexto()">Muda texto do par&aacute;grafo</button></td>
+	<td><button type="button" onclick="mudaCorTexto()">Muda cor do par&aacute;grafo</button></td>
+	<td><button type="button" onclick="escreveTexto()">Escreve no documento</button></td>
+</tr>
+
+<!-- Muda o texto do parágrafo -->
+<script>
+function mudaTexto()
+{
+	var elem = document.getElementById("demo");
+	elem.innerHTML = "<p>" + prompt("Digite algum texto:") + "</p>" ;
+}
+
+function mudaCorTexto() {
+	var elem = document.getElementById("demo");
+	elem.style.color = "#fdaabc";
+}
+
+function escreveTexto() {
+	document.write ("<p>Escrevi algum texto!!!</p>");
+}
+</script>
+
+</table>
+
+</body>
+</html>
